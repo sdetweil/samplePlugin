@@ -1,0 +1,22 @@
+{
+    "schema": {
+        "samplePlugin": {
+            "type": "object",
+            "title": "Sample Plugin",
+            "properties": {
+                "message": {
+                    "type": "string",
+                    "title": "Message string"
+                }
+            }
+        }
+    },
+    "form": [
+        {
+            "type": "fieldset",
+            "key": "samplePlugin",
+            "expandable": true,
+            "order":0
+        }
+    ]
+}
