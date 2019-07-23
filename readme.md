@@ -8,8 +8,8 @@ This sample smart-mirror plugin is intended to provide a working sample, and sho
     defines the configuration schema for your plugin. 
     You can look at example schema and test your own at https://smart-mirror.io/playground/
     see the form documentation here https://github.com/jsonform/jsonform/wiki
-  * the sample provides a single text string to be used by the plugin
-    if not supplied, the service provides a default message string
+  * the sample provides a single text string to be used by the plugin.
+    If not supplied, the service provides a default message string
 - index.html - *required* if there is content to display
     the html portion for your plugin.  this should use angular directives to generate the plugin content
     This must be added to the main index.html to determine where it will be rendered.
@@ -18,14 +18,14 @@ This sample smart-mirror plugin is intended to provide a working sample, and sho
     All of the angular controller logic (data binding) for your plugin. 
     This must be manually included in a script tag in the main index.html. 
     It is acceptable to write Node here.
-    * the controller requests info from the service, and places that in the scope data 
+    * The controller requests info from the service, and places that in the scope data 
       that the index.html will access to display
 - service.js - *optional*, typically used for gathering data 
     should your plugin need an angular service 
     This must be manually included in a script tag in the main index.html
     * the service accesses the configuration data for this plugin and returns a text string to the caller
-- plugin.css - *optional* if you want to customize  the look and feel of your pl
-    the Cascading StyleSheet file dedicated to this plugin
+- plugin.css - *optional* if you want to customize  the look and feel of your plugin.
+    The Cascading StyleSheet file dedicated to this plugin,
     the entries here should start with your plugin name, preceded by a dot
     .samplePlugin (using the sample plugin name)
 
