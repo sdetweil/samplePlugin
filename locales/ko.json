@@ -1,0 +1,15 @@
+{
+  "samplePlugin": {
+    "config": {
+      "title": "샘플 플러그인",
+      "message.title": "메시지 문자열"
+    }
+  },
+  "commands": {
+    "sample command entry": {
+      "voice": "무언가를하다",
+      "text": "무언가를하다",
+      "description": "추가 된 명령 표시"
+    }
+  }
+}

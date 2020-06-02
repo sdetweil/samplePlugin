@@ -1,0 +1,15 @@
+{
+	"samplePlugin": {
+		"config":{
+			"title":"Sample Plugin",
+			"message.title":"Message string"
+		}
+	},
+	"commands":{
+		"sample command entry":{
+			"voice":"do something (very) (special) (*query)",
+			"text":"do something",
+			"description":"showing a command that is added and returns part of the voice results to the comamnd handler"
+		}
+	}
+}

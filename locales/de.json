@@ -1,0 +1,15 @@
+{
+  "samplePlugin": {
+    "config": {
+      "title": "Beispiel-Plugin",
+      "message.title": "Nachrichtenzeichenfolge"
+    }
+  },
+  "commands": {
+    "sample command entry": {
+      "voice": "etwas tun",
+      "text": "etwas tun",
+      "description": "Anzeigen eines hinzugefügten Befehls"
+    }
+  }
+}

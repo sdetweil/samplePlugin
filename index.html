@@ -1,20 +1,21 @@
 <div class="samplePlugin">
-<!-- 
+<!--
 @attribute ng-controller="samplePluginController"
-            connect to the controller we created 
+            connect to the controller we created
             in controller.js
-@attribute ng-cloak            
-             don't allow partially generated content to show 
+@attribute ng-cloak
+             don't allow partially generated content to show
 @attribute ng-show="focus == 'default'"
-             only show our module content when the app focus is default, 
-             this helps keep the screen clean for each logical function, off for sleep 
+             only show our module content when the app focus is default,
+             this helps keep the screen clean for each logical function, off for sleep
 @attribute  ng-bind="sample_scope_text"
-             bind our data to the variable in the scope,               
+             bind our data to the variable in the scope,
              this data will be shown for the span content-->
-<span   ng-controller="samplePluginController"          
-        ng-cloak         
-        ng-show="focus == 'default'"       
+<span   ng-controller="samplePluginController"
+        ng-cloak
+        ng-show="focus == 'default'"
         ng-bind="sample_scope_text"
+        class="sample-text"
 >
 </span>
 </div>

@@ -1,0 +1,15 @@
+{
+  "samplePlugin": {
+    "config": {
+      "title": "Exemple de plugin",
+      "message.title": "Chaîne de message"
+    }
+  },
+  "commands": {
+    "sample command entry": {
+      "voice": "faire quelque chose",
+      "text": "faire quelque chose",
+      "description": "montrant une commande qui est ajoutée"
+    }
+  }
+}

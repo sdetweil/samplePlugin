@@ -1,3 +1,6 @@
-.samplePlugin {  
-   font-size: 30px; 
+.samplePlugin {
+   font-size: 30px;
+}
+.sample-text {
+	font-weight: bold;
 }

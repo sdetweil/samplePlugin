@@ -1,0 +1,15 @@
+{
+  "samplePlugin": {
+    "config": {
+      "title": "Plugin di esempio",
+      "message.title": "Stringa di messaggio"
+    }
+  },
+  "commands": {
+    "sample command entry": {
+      "voice": "fare qualcosa",
+      "text": "fare qualcosa",
+      "description": "mostrando un comando che viene aggiunto"
+    }
+  }
+}
