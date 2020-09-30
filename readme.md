@@ -5,7 +5,7 @@ This sample smart-mirror plugin is intended to provide a working sample, and sho
 **note** smart-mirror Version 0.27 and up auto loads plugins, and the plugin location configuration (bottom of the confiuration web page) will determine where the plugin content (if any) is displayed
 
 # plugin files
-- config.schema.json (optional **maybe**)
+- config.schema.json - optional **maybe**
 
     defines the configuration schema for your plugin. All plugins that have configuration requirements, **MUST** provide this file. which is used to generate the configuration web page
     to collect, save and provide editing of plugin configuration information.
