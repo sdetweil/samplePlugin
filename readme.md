@@ -22,6 +22,12 @@ This sample smart-mirror plugin is intended to provide a working sample, and sho
     the html portion for your plugin.  this should use angular directives to generate the plugin content    
     * the sample plugin uses this to display the text string managed by the controller<br>
 
+	with sm you build the html in advance, using angular directives to dynamically do whatever, show/hide/ expand table, ... whatever,<br>
+  and put the DATA in the modules 'scope' (in the controller) and then angular updates the DOM ..<br>
+  
+        so the plugin doesn't know ANYTHING about the presentation side at all..  MVC
+        u can change the layout of the presentation by updating the external  plugin/index.html and the code works the same
+
 
 - controller.js - *required* for mgmt of any data displayed
     All of the angular controller logic (data binding) for your plugin.
