@@ -1,30 +1,30 @@
 # Sample Plugin
 
-This sample smart-mirror plugin is intended to provide a working sample, and show how the parts fit together
+This sample smart-mirror plugin is intended to provide a working sample, and show how the parts fit together.
+
+**note** smart-mirror Version 0.27 and up auto loads plugins, and the plugin location configuration (bottom of the confiuration web page) will determine where the plugin content (if any) is displayed
 
 # plugin files
-- config.schema.json (optional)
+- config.schema.json (optional **maybe**)
 
-    defines the configuration schema for your plugin.
+    defines the configuration schema for your plugin. All plugins that have configuration requirements, **MUST** provide this file. which is used to generate the configuration web page
+    to collect, save and provide editing of plugin configuration information.
+
     You can look at example schema and test your own at https://smart-mirror.io/playground/
     see the form documentation here https://github.com/jsonform/jsonform/wiki
   * the sample provides a single text string to be used by the plugin.
     If not supplied, the service provides a default message string<br>
-      **config.schema.json.tr is the version that supports translation in smart-mirror v 0.28 and above**
+      **config.schema.json.tr is the version that supports translation in smart-mirror v 0.28 and above,**
       **note** the schema NAME in this file will be used during translation to match items in the locale/language files.
 
 
 - index.html - *required* if there is content to display
     the html portion for your plugin.  this should use angular directives to generate the plugin content    
-    This must be added to the main index.html to determine where it will be rendered.
-      **(deprecated, smart-mirror Version 0.27 auto loads plugins)**
     * the sample plugin uses this to display the text string managed by the controller<br>
 
 
 - controller.js - *required* for mgmt of any data displayed
     All of the angular controller logic (data binding) for your plugin.
-    This must be manually included in a script tag in the main index.html.
-      **(deprecated, smart-mirror Version 0.27 auto loads plugins)**
     It is acceptable to write Node here.
     * The controller requests info from the service, and places that in the scope data
       that the index.html will access to display<br>
@@ -32,15 +32,11 @@ This sample smart-mirror plugin is intended to provide a working sample, and sho
 
 - service.js - *optional*, typically used for gathering data
     should your plugin need an angular service    
-    This must be manually included in a script tag in the main index.html   
-      **(deprecated, smart-mirror Version 0.27 auto loads plugins)**
     * the service accesses the configuration data for this plugin and returns a text string to the caller<br>
 
 
 - plugin.css - *optional* if you want to customize  the look and feel of your plugin.
     The Cascading StyleSheet file dedicated to this plugin.    
-    This must be manually included in a script tag in the main index.html, head section   
-      **(deprecated, smart-mirror Version 0.27 auto loads plugins)**   
 
 - locales/*.json<br>
       this folder contains the files used for translation of the UI and for the config UI
@@ -97,7 +93,7 @@ This sample smart-mirror plugin is intended to provide a working sample, and sho
         * select a location from the Location dropdown
         * click the Active checkbox on
         * then press submit to save and active these changes
-        
+
 
 ### Tech
 
