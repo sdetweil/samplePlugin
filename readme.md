@@ -10,7 +10,7 @@ This sample smart-mirror plugin is intended to provide a working sample, and sho
     defines the configuration schema for your plugin. All plugins that have configuration requirements, **MUST** provide this file. which is used to generate the configuration web page
     to collect, save and provide editing of plugin configuration information.
 
-    You can look at example schema and test your own at https://smart-mirror.io/playground/
+    You can look at example schema and test your own at https://jsonform.github.io/jsonform/playground/index.html
     see the form documentation here https://github.com/jsonform/jsonform/wiki
   * the sample provides a single text string to be used by the plugin.
     If not supplied, the service provides a default message string<br>
